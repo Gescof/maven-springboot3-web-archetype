@@ -1,0 +1,59 @@
+spring:
+  application:
+    name: ${artifactId}
+  profiles:
+    active: test
+
+# TEST Profile
+---
+server:
+  port: 8080
+
+spring:
+  config:
+    activate:
+      on-profile: test
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: password
+
+com:
+  example:
+    message: Hello World of Test Profile
+
+# DEV Profile
+---
+server:
+  port: 8080
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: password
+
+com:
+  example:
+    message: Hello World of Dev Profile
+
+# PROD Profile
+---
+server:
+  port: 8080
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: password
+
+com:
+  example:
+    message: Hello World of Prod Profile

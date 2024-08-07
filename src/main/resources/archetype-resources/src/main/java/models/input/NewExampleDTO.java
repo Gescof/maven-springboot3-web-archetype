@@ -1,4 +1,4 @@
-package ${package}.models;
+package ${package}.models.input;
 
-public record ModelDTO() {
+public record NewExampleDTO(String name) {
 }

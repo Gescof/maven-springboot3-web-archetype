@@ -1,4 +1,6 @@
-package ${package}.models.input;
+package ${package}.models.output;
 
-public record NewExampleDTO() {
+import java.time.OffsetDateTime;
+
+public record ExampleDTO(String name, OffsetDateTime createdAt) {
 }

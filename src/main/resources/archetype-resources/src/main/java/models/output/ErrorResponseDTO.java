@@ -1,4 +1,4 @@
-package ${package}.models;
+package ${package}.models.output;
 
 import java.time.OffsetDateTime;
 

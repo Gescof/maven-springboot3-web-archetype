@@ -1,74 +1,53 @@
 <archetype-descriptor
+        xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
-        xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0
-        http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
-        name="maven-archetype-springboot">
+        xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
+        name="${artifactId}">
 
-    <id>spring-boot-web-archetype</id>
+    <id>maven-springboot3-web-archetype</id>
 
     <requiredProperties>
         <requiredProperty key="groupId">
             <defaultValue>com.example</defaultValue>
         </requiredProperty>
+
         <requiredProperty key="artifactId">
-            <defaultValue>spring-boot-web-archetype</defaultValue>
+            <defaultValue>demo</defaultValue>
         </requiredProperty>
+
         <requiredProperty key="version">
-            <defaultValue>1.0.0-SNAPSHOT</defaultValue>
+            <defaultValue>0.0.1-SNAPSHOT</defaultValue>
         </requiredProperty>
-        <requiredProperty key="spring-boot.version">
-            <defaultValue>3.3.2</defaultValue>
-        </requiredProperty>
-        <requiredProperty key="java.version">
-            <defaultValue>21</defaultValue>
+
+        <requiredProperty key="package">
+            <defaultValue>com.example.demo</defaultValue>
         </requiredProperty>
     </requiredProperties>
-
-    <sources>
-        <source>src/main/java</source>
-        <source>src/main/resources</source>
-        <source>src/test/java</source>
-        <source>src/test/resources</source>
-    </sources>
 
     <fileSets>
         <fileSet filtered="true" encoding="UTF-8">
             <directory/>
             <includes>
+                <include>.gitignore</include>
+                <include>CHANGELOG.md</include>
                 <include>README.md</include>
             </includes>
         </fileSet>
-        <fileSet encoding="UTF-8">
-            <directory/>
-            <includes>
-                <include>.gitignore</include>
-                <include>CHANGELOG.md</include>
-            </includes>
-        </fileSet>
+
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
             <directory>src/main/java</directory>
-            <includes>
-                <include>**/*.java</include>
-            </includes>
         </fileSet>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+
+        <fileSet filtered="true" encoding="UTF-8">
             <directory>src/main/resources</directory>
-            <includes>
-                <include>**/*</include>
-            </includes>
         </fileSet>
+
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
             <directory>src/test/java</directory>
-            <includes>
-                <include>**/*.java</include>
-            </includes>
         </fileSet>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+
+        <fileSet filtered="true" encoding="UTF-8">
             <directory>src/test/resources</directory>
-            <includes>
-                <include>**/*</include>
-            </includes>
         </fileSet>
     </fileSets>
 </archetype-descriptor>
