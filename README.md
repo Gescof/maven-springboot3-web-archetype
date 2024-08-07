@@ -55,12 +55,15 @@ The project structure is as follows:
   - `exceptions`: Contains the exception and handlers classes.
   - `models`: Contains the model classes: entities and DTOs.
   - `repositories`: Contains the repository classes.
-  - `services`: Contains the service classes.
+  - `services`: Contains the service and mapper classes.
 
 - `src/main/resources`: Contains the main resources.
   - `application.yml`: Contains the application properties.
 
 - `src/test/java`: Contains the test Java source files.
+  - `controllers`: Contains the controller test classes.
+  - `exceptions.handlers`: Contains the exception handler test classes.
+  - `services`: Contains the service and mapper test classes.
 
 - `src/test/resources`: Contains the test resources.
 
@@ -86,3 +89,10 @@ To build and run the project, you can use the following Maven commands:
 ```sh
 mvn clean install
 mvn spring-boot:run
+```
+
+To run the tests, you can use the following Maven command:
+
+```sh
+mvn test
+```
