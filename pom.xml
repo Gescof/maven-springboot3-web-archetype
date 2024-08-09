@@ -5,7 +5,7 @@
 
     <groupId>com.github.gescof</groupId>
     <artifactId>maven-springboot3-web-archetype</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>maven-archetype</packaging>
 
     <name>maven-spring-boot-web-archetype</name>
