@@ -26,7 +26,7 @@ mvn clean install
 mvn archetype:generate 
     -DarchetypeGroupId=com.github.gescof 
     -DarchetypeArtifactId=maven-springboot3-web-archetype 
-    -DarchetypeVersion=1.0.0-SNAPSHOT 
+    -DarchetypeVersion=1.0.0 
     -DgroupId={YOUR_GROUP_ID}
     -DartifactId={YOUR_ARTIFACT_ID}
     -Dversion={YOUR_VERSION}
